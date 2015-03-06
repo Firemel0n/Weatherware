@@ -15,7 +15,7 @@ exports.config_settings = function(req, res) {
 		temp_data.exact = 72;
 		letter_data.letter = "F"; 
 	}
-	else{
+	else if (temp == "celsius") {
 		temp_data.temp = 20;
 		temp_data.exact = 22;
 		letter_data.letter = "C";

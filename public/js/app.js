@@ -40,3 +40,18 @@ $('#make_url').click(function(e) {
 $(".forecast").click(function(){
         woopra.track("forecast_click");
 });
+
+$('.main-content').synchronizeScroll();
+
+jQuery.fn.synchronizeScroll = function() {
+  var elements = this;
+  if (elements.length <= 1) return;
+
+  elements.scroll(
+  function() {
+    var left = $(this).scrollLeft();
+    elements.each(function() {
+        if ($(this).scrollLeft() != left) $(this).scrollLeft(left);
+    });
+  });
+};
