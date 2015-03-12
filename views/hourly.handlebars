@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeatherWear</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href='/css/style.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,400|PT+Sans:400,700|Raleway:400,700,800,900' rel='stylesheet' type='text/css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <a href='/'><img alt="Home" src='../images/back.png' width="50" height="50"></a>
+    
+    <!-- Main body -->
+
+    <div class="main-content">
+
+      <div id="hour">
+
+        <head>{{day}}</head>
+
+        <table id="hourly" align="center">
+          <tr>
+            <td>7 am</td>
+            <td><img src="/images/sun02.png"></td>
+            <td>{{temp7}}&deg;{{letter}}</td>              
+          </tr>
+          <tr>
+            <td>8 am</td>
+            <td><img src="/images/sun03.png"></td>
+            <td>{{temp8}}&deg; {{letter}}</td>                     
+          </tr>
+          <tr>
+            <td>9 am</td>
+            <td><img src="/images/sun01.png"></td>
+            <td>{{temp9}}&deg;{{letter}}</td>
+          </tr>
+          <tr>
+            <td>10 am</td>
+            <td><img src="/images/sun04.png"></td>
+            <td>{{temp10}}&deg; {{letter}}</td>
+          </tr>
+          <tr>
+            <td>11 am</td>
+            <td><img src="/images/sun05.png"></td>
+            <td>{{temp11}}&deg; {{letter}}</td>
+          </tr>
+          <tr>
+            <td>12 pm</td>
+            <td><img src="/images/sun01.png"></td>
+            <td>{{temp12}}&deg; {{letter}}</td>
+          </tr>
+          <tr>
+            <td>1 pm</td>
+            <td><img src="/images/sun06.png"></td>
+            <td>{{temp13}}&deg; {{letter}}</td>
+          </tr>
+          <tr>
+            <td>2 pm</td>
+            <td><img src="/images/sun04.png"></td>
+            <td>{{temp14}}&deg; {{letter}}</td>
+          </tr>
+          <tr>
+            <td>3 pm</td>
+            <td><img src="/images/sun02.png"></td>
+            <td>{{temp15}}&deg; {{letter}}</td>
+          </tr>
+          <tr>
+            <td>4 pm</td>
+            <td><img src="/images/sun06.png"></td>
+            <td>{{temp16}}&deg; {{letter}}</td>
+          </tr>
+          <tr>
+            <td>5 pm</td>
+            <td><img src="/images/sun01.png"></td>
+            <td>{{temp17}}&deg; {{letter}}</td>
+          </tr>
+          <tr>
+            <td>6 pm</td>
+            <td><img src="/images/sun03.png"></td>
+            <td>{{temp18}}&deg; {{letter}}</td>
+          </tr>
+          <tr>
+            <td>7 pm</td>
+            <td><img src="/images/sun04.png"></td>
+            <td>{{temp19}}&deg; {{letter}}</td>
+          </tr>
+          <tr>
+            <td>8 pm</td>
+            <td><img src="/images/sun06.png"></td>
+            <td>{{temp20}}&deg; {{letter}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      var d = new Date();
+      document.getElementById("demo").innerHTML = d.toDateString();
+    </script>
+  </body>
+</html>

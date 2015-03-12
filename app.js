@@ -10,7 +10,11 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var config = require('./routes/config');
-var forecast = require('./routes/forecast');
+var hourly = require('./routes/hourly');
+var dusk = require('./routes/dusk');
+var afternoon = require('./routes/afternoon');
+var morning = require('./routes/morning');
+var evening = require('./routes/evening');
 // Example route
 // var user = require('./routes/user');
 
@@ -39,7 +43,12 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.post('/change_setting', config.config_settings);
-app.get('/forecast', forecast.view);
+app.post('/hourly/:day', hourly.view);
+app.get('/hourly/:day', hourly.view);
+app.get('/dusk', dusk.view);
+app.get('/afternoon', afternoon.view);
+app.get('/evening', evening.view);
+app.get('/morning', morning.view);
 // Example route
 // app.get('/users', user.list);
 

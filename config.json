@@ -1,4 +1,5 @@
 {
 	"temp": "fahrenheit",
-	"notif": "yes"
+	"notif": "yes",
+	"image_toggle": true
 }
