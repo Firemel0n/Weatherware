@@ -35,6 +35,10 @@ h3 {
   color: white;
 }
 
+p {
+  color:white;
+}
+
 .main-content {
   overflow: scroll;
   height: 75vh;
